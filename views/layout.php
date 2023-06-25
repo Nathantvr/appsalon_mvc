@@ -10,13 +10,15 @@
 <body>
     
     <div class="contenedor-app">
+
+        <div class="imagen"></div>
+        
         <div class="overflow">
             <div class="app">
                 <?php echo $contenido; ?>
             </div>
         </div>
-        
-        <div class="imagen"></div>
+
     </div>
     
     <?php 
