@@ -8,6 +8,12 @@ use MVC\Router;
 
 class LoginController {
     public static function login(Router $router) {
+
+        session_start();
+        if(isset($_SESSION['login'])) {
+            header('Location: /cita');
+        }
+
         $alertas = [];
         $auth = new Usuario;
 
